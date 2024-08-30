@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="display-todo mt-3">
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th>Task</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <ng-container *ngFor="let todo of todoList">
+                    <tr *ngIf="todo.active == true">
+                        <td>{{todo.task}}</td>
+                        <td><i class="bi bi-trash" (click)="deleteTodo(todo.id)"></i></td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="add-btn btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="bi bi-plus-lg add-symbol" ></i>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="taskForm">
+              <div class="form-group">
+                <label for="taskDetailsFormControlTextarea1">Task Details</label>
+                <textarea class="form-control" 
+                id="taskDetailsFormControlTextarea1" 
+                rows="3"
+                formControlName="taskDetails"
+                ></textarea>
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer form-group">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" (click)="addTask()" data-bs-dismiss="modal" [disabled]="!taskForm.valid">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>

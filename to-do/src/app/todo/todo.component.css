@@ -1,0 +1,25 @@
+.add-btn{
+    background-color: rgba(33, 37, 41, 1);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-symbol {
+    color: white;
+    font-size: 25px;
+}
+
+.display-todo{
+    text-align: center;
+}
+
+.bi-trash{
+    color: red;
+}
