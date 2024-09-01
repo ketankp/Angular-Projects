@@ -1,0 +1,50 @@
+._headers{
+    height: 70px;   
+    width: 100vw;
+    color: #3d4152;
+    font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+}
+
+._container{
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+._headings{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+._logo{ 
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}   
+
+._location{
+    width: 20%;
+    text-decoration: underline;
+}
+
+._list{
+    width:70%;
+    height: 100%;
+}
+
+._headings ul {
+    display: flex;
+    justify-content: space-between;    
+    list-style: none;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+._headings ul li a {
+    cursor: pointer;
+}
+
+._headings ul li a i{
+    padding-right: 10px;
+}
