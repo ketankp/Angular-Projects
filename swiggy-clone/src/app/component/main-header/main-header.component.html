@@ -3,7 +3,9 @@
         <div class="_headings">
             <a href="#" class="_logo"><img src="/svg/swiggy_logo.svg" alt="Swiggy"></a>
             <div class="_location">
-                {{location_name}}
+                <a href="#" (click)="drawerToggel()">
+                    {{location_name}} <i class="bi bi-chevron-down"></i>
+                </a>
             </div>
             <ul class="_list">
                 <li><a><i class="bi bi-bag"></i>Swiggy Corporate</a></li>

@@ -3,6 +3,7 @@
     width: 100vw;
     color: #3d4152;
     font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+    font-weight: 600;
 }
 
 ._container{
@@ -21,11 +22,29 @@
     width: 10%;
     display: flex;
     justify-content: center;
+    transition: 0.3s;
 }   
+
+._logo:hover{
+    transform: scale(1.2);
+}
 
 ._location{
     width: 20%;
     text-decoration: underline;
+}
+
+._location a {
+    display: flex;
+    gap: 20px;
+}
+
+._location a:hover{
+    color: #ff5200;
+}
+
+._location a i {
+    color: #ff5200;
 }
 
 ._list{

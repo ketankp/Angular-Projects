@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-main-header',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './main-header.component.css'
 })
 export class MainHeaderComponent {
+  @Output() toggleEvent = new EventEmitter();
 
   location_name:string = "Pune";
+
+  drawerToggel(){
+    this.toggleEvent.emit();
+  }
 }

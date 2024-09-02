@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  @ViewChild('drawer') sidenav!: MatSidenav;
+
+  toggleDrawer(){
+    console.log("Sidenav clicked");
+    this.sidenav.toggle();
+  }
 }

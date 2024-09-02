@@ -1,1 +1,8 @@
-<app-main-header></app-main-header>
+<mat-drawer-container class="example-container">
+    <mat-drawer #drawer  mode="over">
+        <app-location (toggleEvent)="toggleDrawer()"></app-location>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-main-header (toggleEvent)="toggleDrawer()"></app-main-header>
+    </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,39 @@
+._container{
+    padding: 20px;
+    font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+    font-weight: 300;
+}
+
+._close{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+._close i{
+    cursor: pointer;
+}
+
+._search{
+    margin-top: 30px;
+    border: 1px solid #d4d5d9;
+    box-shadow: 0 4px 8px 0 #b5b6b9;
+}
+
+._search input{
+    background-color: transparent;
+    line-height: normal;
+    border: none;
+    outline: none;
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    margin: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
