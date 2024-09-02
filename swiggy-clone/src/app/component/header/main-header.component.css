@@ -62,6 +62,11 @@
 
 ._headings ul li a {
     cursor: pointer;
+    text-decoration:  none;
+}
+
+._headings ul li a:visited{
+    color: #3d4152;
 }
 
 ._headings ul li a i{

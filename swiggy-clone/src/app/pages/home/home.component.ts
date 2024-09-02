@@ -8,10 +8,5 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class HomeComponent {
 
-  @ViewChild('drawer') sidenav!: MatSidenav;
 
-  toggleDrawer(){
-    console.log("Sidenav clicked");
-    this.sidenav.toggle();
-  }
 }

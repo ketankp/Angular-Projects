@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { HelperService } from '../../service/helper.service';
 
 @Component({
   selector: 'app-main-header',
@@ -6,11 +7,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './main-header.component.css'
 })
 export class MainHeaderComponent {
-  @Output() toggleEvent = new EventEmitter();
 
   location_name:string = "Pune";
+  constructor(private helperService:HelperService){}
 
-  drawerToggel(){
-    this.toggleEvent.emit();
+  openSelectAddress(){
+    this.helperService.addressSideNav.next(true);
   }
 }

@@ -1,15 +1,15 @@
 <header class="_headers">
     <div class="_container">
         <div class="_headings">
-            <a href="#" class="_logo"><img src="/svg/swiggy_logo.svg" alt="Swiggy"></a>
+            <a [routerLink]="['/']" routerLinkActive="active" class="_logo"><img src="/svg/swiggy_logo.svg" alt="Swiggy"></a>
             <div class="_location">
-                <a href="#" (click)="drawerToggel()">
+                <a (click)="openSelectAddress()">
                     {{location_name}} <i class="bi bi-chevron-down"></i>
                 </a>
             </div>
             <ul class="_list">
                 <li><a><i class="bi bi-bag"></i>Swiggy Corporate</a></li>
-                <li><a><i class="bi bi-search"></i>Search</a></li>
+                <li><a [routerLink]="['/search']" routerLinkActive="active"><i class="bi bi-search"></i>Search</a></li>
                 <li><a><i class="bi bi-percent"></i>Offers</a></li>
                 <li><a><i class="bi bi-patch-question"></i>Help</a></li>
                 <li><a><i class="bi bi-person"></i>Sign In</a></li>
